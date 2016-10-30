@@ -1,68 +1,66 @@
 package com.example.android.reportcardapp;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-
 import java.util.ArrayList;
 
-public class ReportCard extends AppCompatActivity {
+public class ReportCard {
 
-    private String math;
-    private String mathGrade;
-    private String science;
-    private String scienceGrade;
-    private String socialScience;
-    private String socialScienceGrade;
-    private String languageArts;
-    private String languageArtsGrade;
-    private String elective;
-    private String electiveGrade;
+    private String mMath;
+    private String mMathGrade;
+    private String mScience;
+    private String mScienceGrade;
+    private String mSocialScience;
+    private String mSocialScienceGrade;
+    private String mLanguageArts;
+    private String mLanguageArtsGrade;
+    private String mElective;
+    private String mElectiveGrade;
 
     public ReportCard(String m, String s, String ss, String la, String e, String mGrade, String sGrade, String ssGrade, String laGrade, String eGrade){
-        math = m;
-        science = s;
-        socialScience = ss;
-        languageArts = la;
-        elective = e;
-        mathGrade = mGrade;
-        scienceGrade = sGrade;
-        socialScienceGrade = ssGrade;
-        languageArtsGrade = laGrade;
-        electiveGrade = eGrade;
+        mMath = m;
+        mScience = s;
+        mSocialScience = ss;
+        mLanguageArts = la;
+        mElective = e;
+        mMathGrade = mGrade;
+        mScienceGrade = sGrade;
+        mSocialScienceGrade = ssGrade;
+        mLanguageArtsGrade = laGrade;
+        mElectiveGrade = eGrade;
     }
 
+    @Override
     public String toString(){
         String result = "";
         ArrayList<String> grades = new ArrayList<String>();
-        grades.add(math + ": " + mathGrade);
-        grades.add(science + ": " + scienceGrade);
-        grades.add(socialScience + ": " + socialScienceGrade);
-        grades.add(languageArts + ": " + languageArtsGrade);
-        grades.add(elective + ": " + electiveGrade);
+        grades.add(mMath + ": " + mMathGrade);
+        grades.add(mScience + ": " + mScienceGrade);
+        grades.add(mSocialScience + ": " + mSocialScienceGrade);
+        grades.add(mLanguageArts + ": " + mLanguageArtsGrade);
+        grades.add(mElective + ": " + mElectiveGrade);
         for (int i = 0; i < grades.size(); i++){
             result += grades.get(i) + "/n";
         }
         return result;
     }
 
-    public String getMath(){return math;}
-    public void setMath(String math){this.math = math;}
-    public String getMathGrade(){return mathGrade;}
-    public void setMathGrade(String mathGrade){this.mathGrade = mathGrade;}
-    public String getScience(){return science;}
-    public void setScience(String science){this.science = science;}
-    public String getScienceGrade(){return scienceGrade;}
-    public void setScienceGrade(String scienceGrade){this.scienceGrade = scienceGrade;}
-    public String getSocialScience(){return socialScience;}
-    public void setSocialScience(String socialScience){this.socialScience = socialScience;}
-    public String getSocialScienceGrade(){return socialScienceGrade;}
-    public void setSocialScienceGrade(String socialScienceGrade){this.socialScienceGrade = socialScienceGrade;}
-    public String getLanguageArts(){return languageArts;}
-    public void setLanguageArts(String languageArts){this.languageArts = languageArts;}
-    public String getLanguageArtsGrade(){return languageArtsGrade;}
-    public void setLanguageArtsGrade(String languageArtsGrade){this.languageArtsGrade = languageArtsGrade;}
-    public String getElective(){return elective;}
-    public void setElective(String elective){this.elective = elective;}
-    public String getElectiveGrade(){return electiveGrade;}
-    public void setElectiveGrade(String electiveGrade){this.electiveGrade = electiveGrade;}
+    public String getMath(){return mMath;}
+    public void setMath(String mMath){this.mMath = mMath;}
+    public String getMathGrade(){return mMathGrade;}
+    public void setMathGrade(String mMathGrade){this.mMathGrade = mMathGrade;}
+    public String getScience(){return mScience;}
+    public void setScience(String mScience){this.mScience = mScience;}
+    public String getScienceGrade(){return mScienceGrade;}
+    public void setScienceGrade(String mScienceGrade){this.mScienceGrade = mScienceGrade;}
+    public String getSocialScience(){return mSocialScience;}
+    public void setSocialScience(String mSocialScience){this.mSocialScience = mSocialScience;}
+    public String getSocialScienceGrade(){return mSocialScienceGrade;}
+    public void setSocialScienceGrade(String mSocialScienceGrade){this.mSocialScienceGrade = mSocialScienceGrade;}
+    public String getLanguageArts(){return mLanguageArts;}
+    public void setLanguageArts(String mLanguageArts){this.mLanguageArts = mLanguageArts;}
+    public String getLanguageArtsGrade(){return mLanguageArtsGrade;}
+    public void setLanguageArtsGrade(String mLanguageArtsGrade){this.mLanguageArtsGrade = mLanguageArtsGrade;}
+    public String getElective(){return mElective;}
+    public void setElective(String mElective){this.mElective = mElective;}
+    public String getElectiveGrade(){return mElectiveGrade;}
+    public void setElectiveGrade(String mElectiveGrade){this.mElectiveGrade = mElectiveGrade;}
 }
