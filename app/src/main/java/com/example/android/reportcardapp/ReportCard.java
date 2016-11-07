@@ -15,17 +15,17 @@ public class ReportCard {
     private String mElective;
     private String mElectiveGrade;
 
-    public ReportCard(String m, String s, String ss, String la, String e, String mGrade, String sGrade, String ssGrade, String laGrade, String eGrade){
-        mMath = m;
-        mScience = s;
-        mSocialScience = ss;
-        mLanguageArts = la;
-        mElective = e;
-        mMathGrade = mGrade;
-        mScienceGrade = sGrade;
-        mSocialScienceGrade = ssGrade;
-        mLanguageArtsGrade = laGrade;
-        mElectiveGrade = eGrade;
+    public ReportCard(String math, String science, String socialScience, String languageArts, String elective, String mathGrade, String scienceGrade, String socialScienceGrade, String languageArtsGrade, String electiveGrade){
+        mMath = math;
+        mScience = science;
+        mSocialScience = socialScience;
+        mLanguageArts = languageArts;
+        mElective = elective;
+        mMathGrade = mathGrade;
+        mScienceGrade = scienceGrade;
+        mSocialScienceGrade = socialScienceGrade;
+        mLanguageArtsGrade = languageArtsGrade;
+        mElectiveGrade = electiveGrade;
     }
 
     @Override
